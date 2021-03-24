@@ -51,7 +51,6 @@ architecture Structural of top is
 
     S(1 downto 0) <= A(1 downto 0);
     S(9 downto 2) <= resultAdder_R(7 downto 0);
-	    S(10) <= (C or resultAdder_R(8));
---    S(10) <= ((C or resultAdder_R(8)) and '1');
+	  S(10) <= (C or resultAdder_R(8));
 
 end Structural;
